@@ -1,0 +1,18 @@
+
+<main class="pane-contents">
+  <content></content>
+</main>
+
+<div class="pane-titles">
+  <button *foreach="#pane in panes"
+    (click)="select(pane)"
+    [class.active]="isSelected(pane)"
+    [inner-html]="pane.title">
+  </button>
+</div>
+
+<style>
+.active {
+  color: red;
+}
+</style>

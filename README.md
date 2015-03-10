@@ -14,7 +14,12 @@ Clone this repo and execute in your favourite shell:
 
 After completing installation type in your favourite shell:
 
-* `gulp play` to start a "Hello World" app in a new browser window. App files are observed and will be re-transpiled on each change.
+* `gulp play` to start app on localhost:9000
+
+## Structure
+
+- `app` component, declared in index.html & `src/app.{js,html}` bootstraps the app
+- Other components are declared as subfolders in `src`
 
 ## Dependencies
 
